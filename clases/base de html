@@ -1,0 +1,29 @@
+<!-- Estructura base html -->
+
+<html>
+
+<!-- El <head>   </head> contiene la metadata de la página. Va entre el <html> y el <body>
+Las cosas que van acá serían:
+    el <title> de la página
+    el <meta>, que 
+        muestra el character encoding, en general se usa UTF-8, 
+        cómo sería la respuesta de versiones
+        el autor y la descripción.
+    Tenemos <link>, que conecta con los archivos externos de la página, comunmente los 
+    stylesheets de css.
+    También está <script>, que incrusta o linkea archivos javascript para agregar interactividad (???????)
+    <style> define la información de estilo para esa página de html. Onda todos los
+         h1 van a ser de color azul, la letra helvetica 30px, etc
+    
+    -->
+
+
+
+
+  <head>
+    <title> título página </title>
+<!-- Eso saldría en la pestaña. Como tiene tildes se ve raro. -->
+    <title> wea 2</title>
+<!-- Si pongo dos titles no tiraría error, pero el segundo no se ve. -->
+  </head>
+
