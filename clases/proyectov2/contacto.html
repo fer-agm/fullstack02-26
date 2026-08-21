@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Lo quieres, te lo vendo</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>  
+  <nav class="light-blue lighten-2" role="navigation"> 
+    <div class="nav-wrapper container"> 
+      <a id="logo-container" href="index.html" class="brand-logo">LQLV</a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolXxTfyvDWdxU1NCC3sSMii_TruMfpuM59MAqrv5bTQ&s=10" target="_blank">Conoce más de nosotros</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolXxTfyvDWdxU1NCC3sSMii_TruMfpuM59MAqrv5bTQ&s=10" target="_blank">Conoce más de nosotros</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center light-blue-text text-darken-4">¡Contáctanos!</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Escríbenos tu duda o pedido y te responderemos a la brevedad.</h5>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Formulario de contacto -->
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <form class="col s12 m8 offset-m2">
+            
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix light-blue-text">account_circle</i>
+                <input id="nombre" type="text" class="validate" required>
+                <label for="nombre">Nombre completo</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix light-blue-text">email</i>
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Correo electrónico</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix light-blue-text">mode_edit</i>
+                <textarea id="mensaje" class="materialize-textarea" required></textarea>
+                <label for="mensaje">Tu mensaje o consulta</label>
+              </div>
+            </div>
+
+            <div class="row center">
+              <button class="btn-large waves-effect waves-light light-blue lighten-2" type="submit">
+                Enviar Mensaje
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div> 
+    </div>
+
+  <!-- Footer -->
+  <footer class="page-footer light-blue lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Información</h5>
+          <p class="grey-text text-lighten-3">Fernanda Gajardo // Semestre 2 - año 2026</p>  
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Repositorio Github</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/fer-agm/fullstack02-26" target="_blank">Repositorio Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>
