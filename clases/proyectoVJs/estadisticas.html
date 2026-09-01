@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 
+  <link href="https://cdn.datatables.net/v/dt/dt-3.0.2/datatables.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/v/dt/dt-2.0.2/b-3.0.1/b-html5-3.0.1/b-print-3.0.1/datatables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+</head>
+
+<body>  
+  <nav class="light-blue lighten-2" role="navigation"> 
+    <div class="nav-wrapper container"> 
+      <a id="logo-container" href="index.html" class="brand-logo">LQLV</a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <!-- <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolXxTfyvDWdxU1NCC3sSMii_TruMfpuM59MAqrv5bTQ&s=10" target="_blank">Conoce más de nosotros</a></li> -->
+        <li><a href="contacto.html" target="_blank">¡Contáctanos!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <form id="formulario" class="col s12 m8 offset-m2" novalidate>
+          <div class="row">
+
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix light-blue-text">receipt</i>
+              <input id="id" type="text" class="validate">
+              <label for="id">Id de Compra</label>
+              <span class="helper-text"></span>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix light-blue-text">account_circle</i>
+              <input id="nombre" type="text" class="validate">
+              <label for="nombre">Nombre del Cliente</label>
+              <span class="helper-text"></span>
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix light-blue-text">mode_edit</i>
+              <textarea id="compra" class="materialize-textarea validate"></textarea>
+              <label for="compra">Productos que compró</label>
+              <span class="helper-text"></span>
+            </div> 
+
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix light-blue-text">today</i>
+              <input id="fecha" type="date" class="validate">
+              <label for="fecha" class="active">Fecha de compra</label>
+              <span class="helper-text"></span>
+            </div>
+            
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix light-blue-text">attach_money</i>
+              <input id="valor" type="number" class="validate">
+              <label for="valor">Valor de compra</label>
+              <span class="helper-text"></span>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="btn-large waves-effect waves-light light-blue lighten-2" type="submit">
+                Agregar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <table id="tablaEstadisticas" class="display responsive nowrap" style="width:100%">
+          <thead>
+            <tr>
+              <th>ID Compra</th>
+              <th>Nombre del Cliente</th>
+              <th>Productos que compró</th>
+              <th>Fecha de compra</th>
+              <th>Valor de compra</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.datatables.net/v/dt/dt-3.0.2/datatables.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="funciones.js"></script>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+  <script src="https://cdn.datatables.net/v/dt/dt-2.0.2/b-3.0.1/b-html5-3.0.1/b-print-3.0.1/datatables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+</body>
+</html>
+

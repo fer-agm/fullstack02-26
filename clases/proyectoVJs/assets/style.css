@@ -1,0 +1,46 @@
+        body {  
+            background-color:rgb(102, 123, 201);
+            font-family: tahoma, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .center-me {
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        footer{
+          font-family: 'Courier New', monospace;
+          font-size: 10px;
+          background-color: #333;
+          color: #ffffff;
+          bottom: 0;
+          width: 100%;
+        }
+
+        a{
+          color: aliceblue;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          opacity: 0.8;          
+        }
+
+      .main-content {
+        flex: 3;
+        padding: 25px;
+        border-radius: 8px;
+        height: fit-content;
+      }
+
+
+      main {
+        flex: 1;
+      }
